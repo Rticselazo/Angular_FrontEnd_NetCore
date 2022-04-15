@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Eliminar</h1>
+<div mat-dialog-content>
+<h3>Esta seguro de eliminar?</h3>
+
+</div>
+<div mat-dialog-actions>
+    <!--[mat-dialog-close] cierra la pestania al finalizar la accion cierta o falsa-->
+    <button mat-raised-button cdkFocusInitial [mat-dialog-close]="false">Cancelar</button>
+    <button color="warn" mat-raised-button [mat-dialog-close]="true">Eliminar</button>
+</div>
+ 

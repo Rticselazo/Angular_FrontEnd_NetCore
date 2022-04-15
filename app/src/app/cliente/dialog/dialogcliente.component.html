@@ -1,0 +1,19 @@
+<!--Verifica si el cliente es para gregar o editar-->
+<h1 mat-dialog-title> {{cliente!=null ? 'Editar Usuario' : 'Nuevo Usuario'}}</h1>
+<!--Contenido-->
+<div mat-dialog-content>
+   <mat-form-field>
+        <mat-label>Nombre</mat-label>
+       <!--  Vincula con el tyscript de la carpeta-->
+        <input matInput [(ngModel)]="nombre" type="text" placeholder="Ingrese primer valor">
+       <!--  {{nombre}}-->
+    </mat-form-field>
+
+</div>
+<!--Acciones-->
+<div mat-dialog-actions>
+<button mat-raised-button (click)="close()">Cancelar</button>
+<!--Verifica si el cliente es para gregar o editar-->
+<button mat-raised-button color="primary" 
+(click)="cliente!= null ? editCliente() : addCliente()">Guardar</button>
+</div>
