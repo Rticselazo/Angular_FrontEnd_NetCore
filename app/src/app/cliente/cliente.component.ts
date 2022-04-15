@@ -14,6 +14,9 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ClienteComponent implements OnInit {
 
+//SOLUCIONA EL ERROR DE LA DECLARACION DE VARIABLES 
+//"strictPropertyInitialization": false en tsconfig.json
+
   public lst: any;
   public columnas: string[] = ['id','nombre','actions'];
   readonly width: string = '300px';
